@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Show-Me Election Solutions</title>
+  <meta name="description" content="Get in touch with Show-Me Election Solutions. Request a consultation for election administration training, compliance, or policy services in Missouri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ======== Header ======== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L20 8.5v7l-8 4-8-4v-7l8-4.32z"/><path d="M12 6.5l-5 2.5v5l5 2.5 5-2.5v-5l-5-2.5z"/></svg>
+        </div>
+        <div class="logo-text">Show-Me<br><span>Election Solutions</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======== Page Hero ======== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label" style="color:var(--gold)">Get in Touch</span>
+      <h1>Let's Start a Conversation</h1>
+      <p>Whether you need training, compliance support, or policy development, we're ready to discuss how we can serve your county.</p>
+    </div>
+  </section>
+
+  <!-- ======== Contact Section ======== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <h2>We're Here to Help</h2>
+          <p>Complete the form and a member of our team will respond within one business day. We're happy to schedule an introductory call to learn about your county's specific needs and discuss how our services can help.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="cd-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Jefferson City, Missouri</p>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="cd-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>info@showmeelectionsolutions.com</p>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="cd-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <h4>Availability</h4>
+                <p>Monday — Friday, 8:00 AM — 5:00 PM CT<br>Extended hours available during election seasons</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrap">
+          <h3>Request a Consultation</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="organization">Organization *</label>
+                <input type="text" id="organization" name="organization" placeholder="County or organization name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="county">County</label>
+              <input type="text" id="county" name="county" placeholder="Missouri county (if applicable)">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(573) 555-0100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service of Interest *</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service area</option>
+                <option value="training">Training &amp; Certification</option>
+                <option value="compliance">Compliance Consulting</option>
+                <option value="policy">Policy &amp; Document Services</option>
+                <option value="multiple">Multiple Services</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" placeholder="Tell us about your needs, timeline, or any specific questions you have."></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-gold">Submit Request</button>
+            </div>
+          </form>
+
+          <!-- Success Message -->
+          <div class="form-success">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+            <h3>Thank You</h3>
+            <p>Your request has been received. A member of our team will be in touch within one business day.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Footer ======== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L20 8.5v7l-8 4-8-4v-7l8-4.32z"/><path d="M12 6.5l-5 2.5v5l5 2.5 5-2.5v-5l-5-2.5z"/></svg>
+            </div>
+            <div class="logo-text">Show-Me<br><span>Election Solutions</span></div>
+          </a>
+          <p>Specialized consulting for Missouri election authorities. Training, compliance, and policy services you can trust.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html">Training &amp; Certification</a>
+          <a href="services.html">Compliance Consulting</a>
+          <a href="services.html">Policy &amp; Documents</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>Jefferson City, Missouri</p>
+          <p style="margin-top:8px"><a href="contact.html">Send us a message &rarr;</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Show-Me Election Solutions. All rights reserved.</p>
+        <p>Missouri Election Administration Consulting</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
